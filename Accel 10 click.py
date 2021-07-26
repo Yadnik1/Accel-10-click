@@ -79,7 +79,7 @@ reg_read(spi, cs, REG_DEVID)
 # Read device ID to make sure that we can communicate with the ADXL343
 data = reg_read(spi, cs, REG_DEVID)
 if (data != bytearray((DEVID,))):
-    print("ERROR: Could not communicate with ADXL343")
+    print("ERROR: Could not communicate with Accel click")
     sys.exit()
     
 # Read Power Control register
